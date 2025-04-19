@@ -21,3 +21,6 @@ jobs:
 
       - name: Build and Test
         run: mvn clean test  # 执行构建和测试
+
+      - name: Run Smoke Tests
+        run: mvn clean test -Dgroups=smoke
